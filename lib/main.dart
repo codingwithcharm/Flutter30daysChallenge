@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:thirty_days_challenge/basic_widget/image.dart';
+import 'basic_widget/image.dart';
+import 'basic_widget/text.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('DAY 1'),
-        ),
-        body: const Center(child: Text("How are You...!!")),
-      ),
-    ),
-  );
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context)
+  {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: TextWidgetDemo(),
+    );
+  }
 }
